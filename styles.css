@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 /* Set basic styling for HTML and body */
 html, body {
     height: 100%;
@@ -18,13 +20,15 @@ body {
 /* Styling for the heading */
 h1 {
     margin: 0;
-    font-size: 28px;
+    font-size: 50px;
     color: transparent;
     text-align: center;
     background-color: white;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: 'VT323', monospace;
+
 }
 
 /* Styling for the main grid container */
@@ -45,8 +49,8 @@ h1 {
 
 /* Animation keyframes for the glowing border */
 @keyframes glowingBorder {
-    0%, 100% { box-shadow: 0 0 5px rgba(238, 130, 238, 0.7), 0 0 10px rgba(238, 130, 238, 0.5), 0 0 20px rgba(238, 130, 238, 0.3); }
-    50% { box-shadow: 0 0 5px rgba(255, 0, 255, 0.7), 0 0 10px rgba(255, 0, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.3); }
+    0%, 100% { box-shadow: 0 0 20px rgba(238, 130, 238, 0.7), 0 0 10px rgba(238, 130, 238, 0.5), 0 0 20px rgba(238, 130, 238, 0.3); }
+    50% { box-shadow: 0 0 20px rgba(255, 0, 255, 0.7), 0 0 10px rgba(255, 0, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.3); }
 }
 
 /* Styling for the grid cells */
