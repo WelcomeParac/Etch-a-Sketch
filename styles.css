@@ -1,0 +1,107 @@
+/* Set basic styling for HTML and body */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the body container */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styling for the heading */
+h1 {
+    margin: 0;
+    font-size: 28px;
+    color: transparent;
+    text-align: center;
+    background-color: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Styling for the main grid container */
+#container {
+    display: grid;
+    width: 400px;
+    height: 400px;
+    grid-template: repeat(16, 1fr) / repeat(16, 1fr);
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    border: none;
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    animation: glowingBorder 2s linear infinite;
+}
+
+/* Animation keyframes for the glowing border */
+@keyframes glowingBorder {
+    0%, 100% { box-shadow: 0 0 5px rgba(238, 130, 238, 0.7), 0 0 10px rgba(238, 130, 238, 0.5), 0 0 20px rgba(238, 130, 238, 0.3); }
+    50% { box-shadow: 0 0 5px rgba(255, 0, 255, 0.7), 0 0 10px rgba(255, 0, 255, 0.5), 0 0 20px rgba(255, 0, 255, 0.3); }
+}
+
+/* Styling for the grid cells */
+#container > div {
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling for the grid cells on hover */
+#container > div:hover {
+    background-color: #000;
+}
+
+/* Styling for the button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Styling for buttons and input fields */
+button, input {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Styling for buttons on hover */
+button:hover {
+    background-color: #555;
+    border-color: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    /* Adjust the grid width and height for smaller screens */
+    #container {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    /* Adjust font size for smaller screens */
+    h1 {
+        font-size: 24px;
+    }
+
+    /* Adjust button and input padding for smaller screens */
+    button, input {
+        padding: 8px 16px;
+    }
+}
