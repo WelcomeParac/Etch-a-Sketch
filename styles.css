@@ -34,8 +34,8 @@ h1 {
 /* Styling for the main grid container */
 #container {
     display: grid;
-    width: 400px;
-    height: 400px;
+    width: 700px;
+    height: 700px;
     grid-template: repeat(16, 1fr) / repeat(16, 1fr);
     background-color: #f0f0f0;
     margin-bottom: 10px;
